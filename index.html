@@ -8,12 +8,6 @@
   <link rel="stylesheet" href="../res/layui/css/layui.css">
   <link rel="stylesheet" href="../res/static/css/index.css">
   <script type="text/javascript" src="http://tajs.qq.com/stats?sId=66575326" charset="UTF-8"></script>
-  <script>
-(function(b,a,e,h,f,c,g,s){b[h]=b[h]||function(){(b[h].c=b[h].c||[]).push(arguments)};
-b[h].s=!!c;g=a.getElementsByTagName(e)[0];s=a.createElement(e);
-s.src="//s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefore(s,g)
-})(window,document,"script","_qha",352103,false);
-</script>
 </head>
 <body>
   <!-- nav部分 -->
@@ -32,12 +26,10 @@ s.src="//s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefor
         </button>
         <ul class="layui-nav" lay-filter="星火应用商店">
           <li class="layui-nav-item"><a href="index.html">首页</a></li>
-          <li class="layui-nav-item"><a href="download.html">下载</a></li>
-          <li class="layui-nav-item"><a href="https://support.qq.com/products/178646">吐槽</a></li>
-          <li class="layui-nav-item"><a href="https://support.qq.com/products/178646/blog-archive">博客</a></li>
-          <li class="layui-nav-item"><a href="about.html">关于</a></li>
-
-
+          <li class="layui-nav-item"><a href="download.html">下载客户端</a></li>
+          <li class="layui-nav-item"><a href="https://support.qq.com/products/178646">用户反馈</a></li>
+          <li class="layui-nav-item"><a href="https://support.qq.com/products/178646/blog-archive">产品博客</a></li>
+          <li class="layui-nav-item"><a href="about.html">关于我们</a></li>
 
         </ul>
       </div>
@@ -48,24 +40,29 @@ s.src="//s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefor
     <div class="layui-carousel" id="banner">
       <div carousel-item>
         <div>
+            <a href="download.html" target="-blank" title=""><img src="../res/static/img/x2.png">
+            
+            <div class="panel">
+            <p class="title"></p>
+            <p></p>
+          </div>
+        </div>
+        <div>
           <img src="../res/static/img/x1.jpg">
           <div class="panel">
             <p class="title"></p>
             <p></p>
           </div>
         </div>
-        <div>
-          <img src="../res/static/img/banner.jpg">
-          <div class="panel">
-            <p class="title">星火应用商店 beta5</p>
-            <p>优秀的Linux应用商店</p>
-          </div>
-        </div>
       </div>
     </div>
   </div>
   <!-- main部分 -->
+
   <div class="main-product">
+    <a href="about.html" target="-blank" title="about"><img src="../res/static/img/1.png"width="1920" height="1080"</a>
+    <a href="" target="-blank" title="about"><img src="../res/static/img/2.png"width="1920" height="1080"</a>
+    <a href="download.html" target="-blank" title="about"><img src="../res/static/img/3.png"width="1920" height="1080"</a>
     <div class="layui-container">
       <p class="title">应用丰富</span></p>
       <div class="layui-row layui-col-space25">
@@ -91,8 +88,8 @@ s.src="//s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefor
           <div class="content">
             <div><img src="../res/static/img/Big_icon2.png"></div>
             <div>
-              <p class="label">办公学习</p>
-              <p></p>
+            <p class="label">办公学习</p>
+            <p></p>
             </div>
           </div>
         </div>
@@ -178,7 +175,7 @@ s.src="//s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefor
       </div>
     </div>
   </div>
-  
+
   <!-- footer部分 -->
   <div class="footer">
     <div class="layui-container">
@@ -209,8 +206,8 @@ s.src="//s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefor
 <![endif]-->
 <script>
   layui.config({
-    base: '../res/static/js/' 
-  }).use('firm'); 
+    base: '../res/static/js/'
+  }).use('firm');
 </script>
 </body>
 </html>

@@ -3,6 +3,8 @@
 
 问题反馈地址：https://support.qq.com/products/178646 网站目前为测试阶段，欢迎大家提出建议！
 
+产品博客地址：https://support.qq.com/products/178646/blog-archive
+
 # 团队介绍
 星火应用商店由深度科技论坛（bbs.deepin.org）大佬 shenmo 发起的星火工作组致力于丰富 Linux 生态，
 取“星星之火，可以燎原”之意，组建了星火应用商店。
@@ -14,7 +16,8 @@
 
 UI概念设计师：akliusizhe 
 
-# 更新日志(20200805)
+# 更新日志
+> 更新日志(20200805)
 1.修复 底部旁边空白问题。
 
 2.优化 首页UI。

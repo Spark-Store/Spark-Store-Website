@@ -5,6 +5,8 @@
 
 产品博客地址：https://support.qq.com/products/178646/blog-archive
 
+目前网站UI一般般，以后会越做越好。欢迎UI大佬加入我们！
+
 # 团队介绍
 星火应用商店由深度科技论坛（bbs.deepin.org）大佬 shenmo 发起的星火工作组致力于丰富 Linux 生态，
 取“星星之火，可以燎原”之意，组建了星火应用商店。

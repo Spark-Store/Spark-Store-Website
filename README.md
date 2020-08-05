@@ -1,4 +1,4 @@
-# 星火应用商店官网测试版 Spark Store Website Beta
+# 星火应用商店官网测试版 
 测试官网网址：https://spark-app.tk/
 
 问题反馈地址：https://support.qq.com/products/178646 网站目前为测试阶段，欢迎大家提出建议！

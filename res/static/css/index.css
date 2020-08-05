@@ -1,12 +1,3 @@
-/**
- 
- @Name: layuiNetCompany - 
- @Author: xuxingyu
- @Copyright: layui.com
- 
- */
-
-
 body{background: #fff;}
 
 /** 首页 */
@@ -32,14 +23,14 @@ body{background: #fff;}
 ,.nav .layui-nav .layui-nav-item a:hover{color: #2db5a3;}
 
 /*轮播*/
-#banner img{min-width: 100%; height: 1050px;}
+#banner img{width: 100%}
 #banner .panel{width: 400px; position: absolute; top: 25%; left: 50%; margin-left: -200px; text-align: center;}
 #banner .panel p{color: #8c8c8c; font-size: 44px; line-height: 80px; letter-spacing: 15px;}
 #banner .panel p.title{color: #4a4a4a; font-size: 54px; letter-spacing: 10px;}
 
 /*主体—产品*/
-.main-product{padding-top: 90px; padding-bottom: 130px;}
-.main-product p{font-size: 16px; color: #ababab; line-height: 28px;}
+.main-product{padding-top: 90px;}
+.main-product p{font-size: 16px; color: #ababab; line-height: 28px; margin-top:10px;}
 .main-product p.title
 ,.main-service p.title{color: #484848; font-size: 24px; text-align: center; line-height: 160px;}
 .main-product p.title span

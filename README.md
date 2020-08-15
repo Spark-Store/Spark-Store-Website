@@ -1,5 +1,5 @@
-# 星火应用商店官网测试版 
-测试官网网址：https://www.spark-app.store
+# 星火应用商店官网
+官网网址：https://www.spark-app.store
 
 网站概念PPT：https://chaodn-my.sharepoint.com/:p:/g/personal/chaodn_chaodn_tk/ETCi6KEE79lFgY_TE7iinZ0BcpX3_L9uPBLU_jIOmSk_Qw?e=
 
@@ -21,6 +21,13 @@
 UI概念设计师：akliusizhe 
 
 ## 更新日志
+
+> 20200806
+1.优化 首页图片清晰度与速度.
+
+2.更新 网站layui框架版本为V2.5.6。
+
+3.增加 网站数据统计代码。
 
 > 20200806
 

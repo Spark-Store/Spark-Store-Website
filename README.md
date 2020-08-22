@@ -1,5 +1,6 @@
 # 星火应用商店官网
 官网网址：https://www.spark-app.store
+测试网址：https://test.spark-app.store
 
 网站概念PPT：https://chaodn-my.sharepoint.com/:p:/g/personal/chaodn_chaodn_tk/ETCi6KEE79lFgY_TE7iinZ0BcpX3_L9uPBLU_jIOmSk_Qw?e=
 

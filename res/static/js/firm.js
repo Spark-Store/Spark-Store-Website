@@ -16,7 +16,7 @@ layui.define(['jquery', 'element', 'carousel', 'laypage'], function(exports){
   carousel.render({
     elem: '#banner'
     ,width: '100%'
-    ,height: '898px'
+    ,height: 'auto'
     ,arrow: 'always'
   });
 

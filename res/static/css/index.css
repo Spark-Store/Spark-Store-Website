@@ -56,12 +56,13 @@ body{background: #fff;}
 .main-service .service-more a{padding: 10px 62px; font-size: 23px; line-height: 46px;color: #FFF; background: #7fd3c6; border-radius: 3px;}
 
 /*底部*/
-.footer{padding-bottom: 70px; background: #5e6664;}
+.footer{padding-bottom: 70px; background: #5e6664;margin-top: 10px;}
 .footer .footer-web{padding-top: 50px; padding-bottom: 63px;}
 .footer .footer-web a{color: #a5aaa9; line-height: 22px; margin-right: 20px; transition: 0.3s;}
 .footer .footer-web a:hover{color: #dce1e0; transition: 0.3s;}
 .footer .footer-contact{color: #fff;}
-.footer .footer-contact a{color: #a5aaa9;}
+.footer .footer-contact a,p{color: #a5aaa9;font-size: 16px;}
+.footer .footer-contact a:hover{color: #fff; transition: 0.3s;}
 .footer .footer-contact .contact-top{padding-top: 20px; line-height: 30px;}
 .footer .footer-contact .contact-bottom{line-height: 35px;}
 

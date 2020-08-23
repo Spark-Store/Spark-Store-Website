@@ -1,195 +1,198 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <title>星火应用商店-下载客户端</title>
+    <link rel="icon" type="image/x-icon" href="./res/static/img/dalogo.png" />
+    <link rel="stylesheet" href="./res/layui/css/layui.css">
+    <link rel="stylesheet" href="./res/static/css/index.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-  <title>星火应用商店-下载客户端</title>
-  <link rel="icon" type="image/x-icon" href="./res/static/img/dalogo.png" />
-  <link rel="stylesheet" href="./res/layui/css/layui.css">
-  <link rel="stylesheet" href="./res/static/css/index.css">
-</head>
+  <body>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-<body>
-  <style type="text/css">
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-
-    html {
-      font-size: 12px;
-      font-family: MILanPro, Helvetica, Arial, sans-serif, 微软雅黑;
-    }
-
-    @media (min-width: 800px) {
       html {
-        font-size: 14px !important;
+        font-size: 12px;
         font-family: MILanPro, Helvetica, Arial, sans-serif, 微软雅黑;
       }
-    }
 
-    @media (min-width: 1200px) {
-      html {
-        font-size: 16px !important;
-        font-family: MILanPro, Helvetica, Arial, sans-serif, 微软雅黑;
+      @media (min-width: 800px) {
+        html {
+          font-size: 14px !important;
+          font-family: MILanPro, Helvetica, Arial, sans-serif, 微软雅黑;
+        }
       }
-    }
 
-    @media (min-width: 1500px) {
-      html {
-        font-size: 17.5px !important;
-        font-family: MILanPro, Helvetica, Arial, sans-serif, 微软雅黑;
+      @media (min-width: 1200px) {
+        html {
+          font-size: 16px !important;
+          font-family: MILanPro, Helvetica, Arial, sans-serif, 微软雅黑;
+        }
       }
-    }
 
-    @media (min-width: 1700px) {
-      html {
-        font-size: 20px !important;
-        font-family: MILanPro, Helvetica, Arial, sans-serif, 微软雅黑;
+      @media (min-width: 1500px) {
+        html {
+          font-size: 17.5px !important;
+          font-family: MILanPro, Helvetica, Arial, sans-serif, 微软雅黑;
+        }
       }
-    }
 
+      @media (min-width: 1700px) {
+        html {
+          font-size: 20px !important;
+          font-family: MILanPro, Helvetica, Arial, sans-serif, 微软雅黑;
+        }
+      }
 
+      .uk_bannerdown {
+        background: -webkit-linear-gradient(-60deg, #7be0fa 0%, #3798ef 100%);
+        background-color: #00d5ff;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 6px #666666;
 
-    .uk_bannerdown {
-      background: -webkit-linear-gradient(-60deg, #7be0fa 0%, #3798ef 100%);
-      background-color: #00d5ff;
-      padding: 10px;
-      border-radius: 20px;
-      box-shadow: 1px 1px 6px #666666;
-
-    }
-  </style>
-  <!-- nav部分 -->
-  <div class="nav">
-    <div class="layui-container">
-      <!-- 公司logo -->
-      <div class="nav-logo">
-        <a href="index.html">
-          <img src="./res/static/img/logo.png" alt="">
-        </a>
-      </div>
-      <div class="nav-list">
-        <button>
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="layui-nav" lay-filter="星火应用商店">
-          <li class="layui-nav-item"><a href="index.html">首页</a></li>
-          <li class="layui-nav-item"><a href="download.html">下载</a></li>
-          <li class="layui-nav-item"><a href="https://support.qq.com/products/178646">用户反馈</a></li>
-          <li class="layui-nav-item"><a href="https://support.qq.com/products/178646/blog-archive">产品博客</a></li>
-          <li class="layui-nav-item"><a href="about.html">关于我们</a></li>
-
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- banner部分 -->
-  <div class="banner case">
-    <div class="title">
-      <p>
-        <font color="white">下载客户端</font>
-      </p>
-      <p class="en">
-        <font color="white">Download</font>
-      </p>
-    </div>
-  </div>
-  <!-- main部分 -->
-  <!-- main部分 -->
-  <div class="main-product">
-    <div class="layui-container">
-      <div class="layui-row layui-col-space25">
-        <div class="layui-col-sm6 layui-col-md3">
-          <div class="content">
-            <div><img src="./res/static/img/linux.png" width="50%"></div>
-            <div>
-              <p class="label">星火应用商店 Beta7+1</p>
-              <p>-全新加入搜索功能，快速找软件</p>
-              <p>-UI改进，更加美观</p>
-              <p><span style="font-family:youyuan;"><strong><a class="uk_bannerdown"
-                      href="https://shenmo.lanzous.com/iqCKSfkm2mb" target="_blank"><span
-                        style="font-size:20px;color: white;">立即下载</span></a></strong></span></span></p>
-            </div>
-          </div>
+      }
+    </style>
+    <!-- nav部分 -->
+    <div class="nav">
+      <div class="layui-container">
+        <!-- 公司logo -->
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="./res/static/img/logo.png" alt="">
+            <h1 style="visibility: hidden;">星火应用商店</h1>
+          </a>
         </div>
-        <div class="layui-col-sm6 layui-col-md3 ">
-          <div class="content">
-            <div><img src="./res/static/img/debian.png" width="50%"></div>
-            <div>
-              <p class="label">客户端依赖包</p>
-              <p>-让商店客户端兼容各种Debian系发行版</p>
-              <p>-Deepin无需安装此依赖包</p>
-              <p><span style="font-family:youyuan;"><strong><a class="uk_bannerdown"
-                      href="http://dcstore.spark-app.store/spark-store-dependencies-kylin.zip" target="_blank"><span
-                        style="font-size:20px;color: white;">立即下载</span></a></strong></span></span></p>
-            </div>
-          </div>
-        </div>
-        <div class="layui-col-sm6 layui-col-md3 ">
-          <div class="content">
-            <div><img src="./res/static/img/web.png" width="50%"></div>
-            <div>
-              <p class="label">网页端商店</p>
-              <p>-在线投稿、催更或推荐优秀的应用</p>
-              <p>-查看最新上架的优秀应用</p>
-              <p><span style="font-family:youyuan;"><strong><a class="uk_bannerdown"
-                      href="http://web.spark-app.store:420/" target="_blank"><span
-                        style="font-size:20px;color: white;">立即打开</span></a></strong></span></span></p>
-            </div>
-          </div>
-        </div>
-        <div class="layui-col-sm6 layui-col-md3 ">
-          <div class="content">
-            <div><img src="./res/static/img/gitee.png" width=50%"></div>
-            <div>
-              <p class="label">商店源代码</p>
-              <p>-源代码托管在中国的码云，查看或下载代码速度更快</p>
-              <p>-为我们贡献代码</p>
-              <p><span style="font-family:youyuan;"><strong><a class="uk_bannerdown"
-                      href="https://gitee.com/deepin-community-store" target="_blank"><span
-                        style="font-size:20px;color: white;">立即查看</span></a></strong></span></span></p>
-            </div>
-          </div>
+        <div class="nav-list">
+          <button>
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="layui-nav" lay-filter="星火应用商店">
+            <li class="layui-nav-item"><a href="index.html">首页</a></li>
+            <li class="layui-nav-item"><a href="download.html">下载</a></li>
+            <li class="layui-nav-item"><a href="https://support.qq.com/products/178646">用户反馈</a></li>
+            <li class="layui-nav-item"><a href="https://support.qq.com/products/178646/blog-archive">产品博客</a></li>
+            <li class="layui-nav-item"><a href="about.html">关于我们</a></li>
+          </ul>
         </div>
       </div>
     </div>
-
-
+    <!-- banner部分 -->
+    <div class="banner case">
+      <div class="title">
+        <p>
+          <font color="white">下载客户端</font>
+        </p>
+        <p class="en">
+          <font color="white">Download</font>
+        </p>
+      </div>
+    </div>
+    <!-- main部分 -->
+    <div class="main-product">
+      <div class="layui-container">
+        <div class="layui-row layui-col-space25">
+          <div class="layui-col-sm6 layui-col-md3">
+            <div class="content">
+              <div><img src="./res/static/img/linux.png" width="50%"></div>
+              <div>
+                <p class="label">星火应用商店 Beta7+1</p>
+                <p>-全新加入搜索功能，快速找软件</p>
+                <p>-UI改进，更加美观</p>
+                <p>
+                  <span style="font-family:youyuan;">
+                    <strong>
+                      <a class="uk_bannerdown" href="https://shenmo.lanzous.com/iqCKSfkm2mb" target="_blank">
+                        <span tyle="font-size:20px;color: white;">立即下载</span>
+                      </a>
+                    </strong>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="layui-col-sm6 layui-col-md3 ">
+            <div class="content">
+              <div><img src="./res/static/img/debian.png" width="50%"></div>
+              <div>
+                <p class="label">客户端依赖包</p>
+                <p>-让商店客户端兼容各种Debian系发行版</p>
+                <p>-Deepin无需安装此依赖包</p>
+                <p>
+                  <span style="font-family:youyuan;">
+                    <strong>
+                      <a class="uk_bannerdown" href="http://dcstore.spark-app.store/spark-store-dependencies-kylin.zip" target="_blank">
+                        <span style="font-size:20px;color: white;">立即下载</span>
+                      </a>
+                    </strong>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="layui-col-sm6 layui-col-md3 ">
+            <div class="content">
+              <div><img src="./res/static/img/web.png" width="50%"></div>
+              <div>
+                <p class="label">网页端商店</p>
+                <p>-在线投稿、催更或推荐优秀的应用</p>
+                <p>-查看最新上架的优秀应用</p>
+                <p>
+                  <span style="font-family:youyuan;">
+                    <strong>
+                      <a class="uk_bannerdown" href="http://web.spark-app.store:420/" target="_blank">
+                        <span style="font-size:20px;color: white;">立即打开</span>
+                      </a>
+                    </strong>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="layui-col-sm6 layui-col-md3 ">
+            <div class="content">
+              <div><img src="./res/static/img/gitee.png" width="50%"></div>
+              <div>
+                <p class="label">商店源代码</p>
+                <p>-源代码托管在中国的码云，查看或下载代码速度更快</p>
+                <p>-为我们贡献代码</p>
+                <p>
+                  <span style="font-family:youyuan;">
+                    <strong>
+                      <a class="uk_bannerdown" href="https://gitee.com/deepin-community-store" target="_blank">
+                        <span style="font-size:20px;color: white;">立即查看</span>
+                      </a>
+                    </strong>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- footer部分 -->
-    <div class="footer">
-      <div class="layui-container">
-        <div class="layui-row footer-contact">
-          <div class="layui-col-sm10 layui-col-lg11">
-            <div class="layui-row">
-              <div class="layui-col-sm6 layui-col-md8 layui-col-lg9">
-                <p class="contact-bottom"><a href="about.html">关于我们 | </a><a href="download.html">下载商店 |
-                  </a>星火应用商店中华人民共和国大陆地区官网 | &nbsp;&copy;&nbsp;2020
-                  星火应用商店&nbsp;</p>
-              </div>
-              <div class="layui-col-sm6 layui-col-md4 layui-col-lg3">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="./res/layui/layui.js"></script>
-  <!--[if lt IE 9]>
-  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
-  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-  <script>
-    layui.config({
-      base: './res/static/js/'
-    }).use('firm');
-  </script>
-</body>
+    <footer>
+      <p class="contact-bottom"><a href="about.html">关于我们</a> | <a href="download.html">下载商店</a> | &copy; copyright 2020 spark-app.store 星火应用商店版权所有</p>
+    </footer>
 
+    <script src="./res/layui/layui.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+      layui.config({
+        base: './res/static/js/'
+      }).use('firm');
+    </script>
+  </body>
 </html>

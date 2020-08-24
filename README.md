@@ -1,15 +1,22 @@
 # 星火应用商店官网
-官网网址：https://www.spark-app.store
 
-测试网址：https://test.spark-app.store
+星火应用商店官网各线路：
 
-网站概念PPT：https://chaodn-my.sharepoint.com/:p:/g/personal/chaodn_chaodn_tk/ETCi6KEE79lFgY_TE7iinZ0BcpX3_L9uPBLU_jIOmSk_Qw?e=
+中国大陆：https://www.spark-app.store/
 
-问题反馈地址：https://support.qq.com/products/178646 网站目前为测试阶段，欢迎大家提出建议！
+欧美中文：http://oc.spark-app.store/
+
+欧美英文：https://en.spark-app.store/
+
+测试地址：https://test.spark-app.store/
+
+网站概念PPT：http://pan.chaodn.tk/#s/6JEPPaxw
+
+问题反馈地址：https://support.qq.com/products/178646 
 
 产品博客地址：https://support.qq.com/products/178646/blog-archive
 
-目前网站UI一般般，以后会越做越好。欢迎UI大佬加入我们！
+欢迎UI大佬加入我们！
 
 ## 团队介绍
 由深度科技论坛（bbs.deepin.org）大佬 shenmo 发起的星火工作组致力于丰富 Linux 生态，
@@ -18,37 +25,10 @@
 尽管我们年龄不同，资历不同，但是我们努力建设 Linux 生态的目标是相同的，
 我们有信心、也有勇气做到这些！
 
-网站制作管理：chaodn Playhi
+网站制作管理：chaodn Playhi momen 时间世界 jiwangyihao
 
 UI概念设计师：akliusizhe 
 
-## 更新日志
-
-> 20200806
-
-1.优化 首页图片清晰度与速度.
-
-2.更新 网站layui框架版本为V2.5.6。
-
-3.增加 网站数据统计代码。
-
-> 20200806
-
-1.优化 导航栏logo大小。
-
-2.更新 下载页面的内容。
-
-3.增加 关于我们页面内容。
-
-4.优化 UI。
-
-> 20200805
-
-1.修复 底部旁边空白问题。
-
-2.优化 首页UI。
-
-3.修改 下载按钮，更加美观。
 ## 加入我们
 软件维护员
 

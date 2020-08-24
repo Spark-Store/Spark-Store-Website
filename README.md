@@ -25,7 +25,7 @@
 尽管我们年龄不同，资历不同，但是我们努力建设 Linux 生态的目标是相同的，
 我们有信心、也有勇气做到这些！
 
-网站制作管理：chaodn Playhi momen 时间世界 jiwangyihao
+网站制作管理：chaodn Playhi momen jiwangyihao 时间世界
 
 UI概念设计师：akliusizhe 
 

@@ -8,7 +8,7 @@
 
 欧美英文：https://en.spark-app.store/
 
-测试地址：https://beta.spark-app.store/
+测试地址：http://beta.spark-app.store/
 
 测试地址：https://test.spark-app.store/
 

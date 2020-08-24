@@ -102,14 +102,17 @@
             <div class="content">
               <div><img src="./res/static/img/linux.png" width="50%"></div>
               <div>
-                <p class="label">星火应用商店 Beta7+1</p>
+                <p class="label">星火应用商店 Beta7+2</p>
                 <p>-全新加入搜索功能，快速找软件</p>
                 <p>-UI改进，更加美观</p>
                 <p>
                   <span style="font-family:youyuan;">
                     <strong>
-                      <a class="uk_bannerdown" href="https://shenmo.lanzous.com/iqCKSfkm2mb" target="_blank">
-                        <span style="font-size:20px;color: white;">立即下载</span>
+                      <a class="uk_bannerdown" href="http://dcstore.shenmo.tech/store/tools/spark-store/spark-store_1.0-beta7.2_amd64.deb" target="_blank">
+                        <span style="font-size:20px;color: white;" onclick='javascript:layui.use("layer", function () {
+                        var layer = layui.layer;
+                        layer.alert("由于深度软件包管理器不处理缺失依赖，请使用命令安装 下载目录右键终端打开，sudo apt install ./文件名，或者使用 gedbi 安装");
+                        });'>立即下载</span>
                       </a>
                     </strong>
                   </span>
@@ -196,4 +199,5 @@
     </script>
   </body>
 </html>
+
 

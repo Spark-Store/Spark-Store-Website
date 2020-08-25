@@ -99,6 +99,36 @@ body {
   line-height: 80px;
 }
 
+.nav .nav-logo a {
+	display: inline-block;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.nav .nav-logo a h1 {
+	font-family: "aliphr";
+	color: rgb(89,89,89);
+	font-size: 32px;
+	display: inline-block;
+	line-height: 80px;
+}
+
+.nav .nav-logo a img {
+	height: 60%;
+}
+
+.nav .nav-logo a p:first-of-type {
+	visibility: hidden;
+}
+
+.nav .nav-logo a p:last-of-type {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+}
+
 .nav .nav-list {
   display: inline-block;
   height: 80px;

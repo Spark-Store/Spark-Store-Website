@@ -2,13 +2,70 @@ body {
   background: #fff;
 }
 
+/** 字体 */
+
+@font-face {
+  font-family: 'aliphh'; /* 阿里巴巴普惠体-heavy*/
+  font-display: swap;
+  src: url('//at.alicdn.com/t/webfont_37fasdzrdpv.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_37fasdzrdpv.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_37fasdzrdpv.woff2') format('woff2'),
+  url('//at.alicdn.com/t/webfont_37fasdzrdpv.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_37fasdzrdpv.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_37fasdzrdpv.svg#AlibabaPuHuiTiH') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: 'aliphb'; /* 阿里巴巴普惠体-bold*/
+  font-display: swap;
+  src: url('//at.alicdn.com/t/webfont_s8rh4cxnkuc.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_s8rh4cxnkuc.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_s8rh4cxnkuc.woff2') format('woff2'),
+  url('//at.alicdn.com/t/webfont_s8rh4cxnkuc.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_s8rh4cxnkuc.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_s8rh4cxnkuc.svg#Alibaba-PuHuiTi-Bold') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: 'aliphm'; /* 阿里巴巴普惠体-medium*/
+  font-display: swap;
+  src: url('//at.alicdn.com/t/webfont_52u7udd0h2l.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_52u7udd0h2l.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_52u7udd0h2l.woff2') format('woff2'),
+  url('//at.alicdn.com/t/webfont_52u7udd0h2l.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_52u7udd0h2l.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_52u7udd0h2l.svg#AlibabaPuHuiTiM') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: 'aliphr'; /* 阿里巴巴普惠体-regular*/
+  font-display: swap;
+  src: url('//at.alicdn.com/t/webfont_x8luquj5l5r.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_x8luquj5l5r.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_x8luquj5l5r.woff2') format('woff2'),
+  url('//at.alicdn.com/t/webfont_x8luquj5l5r.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_x8luquj5l5r.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_x8luquj5l5r.svg#Alibaba-PuHuiTi-Regular') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: 'aliphl'; /* 阿里巴巴普惠体-regular*/
+  font-display: swap;
+  src: url('//at.alicdn.com/t/webfont_9nftjukg7gn.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_9nftjukg7gn.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_9nftjukg7gn.woff2') format('woff2'),
+  url('//at.alicdn.com/t/webfont_9nftjukg7gn.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_9nftjukg7gn.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_9nftjukg7gn.svg#AlibabaPuHuiTiL') format('svg'); /* iOS 4.1- */
+}
+
 /** 首页 */
 
 /*导航部分*/
 .nav {
   width: 100%;
   height: 80px;
-  box-shadow: 0 3px 3px 0 #CCC;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.3);
   background: #FFF;
   position: fixed;
   left: 0;
@@ -24,8 +81,8 @@ body {
 }
 
 .nav.scroll {
-  background: #ffffffcf;
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.05);
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.3);
   transition: 0.3s
 }
 
@@ -40,6 +97,36 @@ body {
   top: 0;
   left: 15px;
   line-height: 80px;
+}
+
+.nav .nav-logo a {
+	display: inline-block;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.nav .nav-logo a h1 {
+	font-family: "aliphr";
+	color: rgb(89,89,89);
+	font-size: 32px;
+	display: inline-block;
+	line-height: 80px;
+}
+
+.nav .nav-logo a img {
+	height: 60%;
+}
+
+.nav .nav-logo a img:first-of-type {
+	visibility: hidden;
+}
+
+.nav .nav-logo a img:last-of-type {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
 }
 
 .nav .nav-list {
@@ -61,19 +148,20 @@ body {
 
 .nav .nav-list button span {
   display: block;
-  width: 25px;
-  height: 2px;
-  background: #2db5a3;
+  width: 30px;
+  height: 4px;
+  background: rgb(47,85,151);
   margin-bottom: 6px;
   transition: 0.5s;
+  border-radius: 2px;
 }
 
 .nav .nav-list button span.spa1 {
-  transform: rotate(45deg);
+  transform: rotate(45deg) translate(4px,4px);
 }
 
 .nav .nav-list button span.spa3 {
-  transform: rotate(-45deg) translate(5px,-5px);
+  transform: rotate(-45deg) translate(3px,-3px);
 }
 
 .nav .layui-nav {
@@ -101,13 +189,15 @@ body {
 
 .nav .layui-nav-bar,
 .nav .layui-nav .layui-this:after {
-  height: 2px;
-  background-color: #2db5a3;
+  height: 4px;
+  background-color: rgb(47,85,151);
+  border-radius: 2px;
+  transform: translateY(-20px);
 }
 
 .nav .layui-nav .layui-this a
 ,.nav .layui-nav .layui-nav-item a:hover {
-  color: #2db5a3;
+  color: rgb(47,85,151);
 }
 
 /*轮播*/
@@ -769,6 +859,74 @@ footer p {
     line-height: 30px;
     height: 30px;
     margin-right: 4px;
+  }
+  
+  .nav .layui-nav .layui-nav-item {
+    line-height: 40px;
+    display: inline-block;
+    width: 31.3%;
+    margin: 1% 1%;
+    text-align: center;
+  }
+  
+  .nav .layui-nav .layui-nav-item:nth-last-of-type(2),.nav .layui-nav .layui-nav-item:nth-last-of-type(1) {
+    width: 48%;
+  }
+  
+  .nav .layui-nav-bar, .nav .layui-nav .layui-this::after {
+    height: 40px;
+    border-radius: 20px;
+    transform: unset;
+    z-index: -1;
+  }
+  
+  .nav .layui-nav-bar {
+    margin-top: 1%;
+  }
+  
+  .nav .layui-nav .layui-this a, .nav .layui-nav .layui-nav-item a:hover {
+    color: rgb(255,255,255);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .nav .layui-nav-bar, .nav .layui-nav .layui-this::after {
+    height: 40px;
+    border-radius: 20px;
+    z-index: -1;
+    transform: unset;
+  }
+  
+  .nav .layui-nav-bar {
+    margin-top: 1%;
+  }
+  
+  .nav .layui-nav .layui-nav-item {
+    line-height: 40px;
+    display: inline-block;
+    width: 18%;
+    margin: 1%;
+    text-align: center;
+  }
+  
+  .nav .layui-nav .layui-this a, .nav .layui-nav .layui-nav-item a:hover {
+    height: 40px;
+    border-radius: 20px;
+    transform: unset;
+    z-index: -1;
+  }
+  
+  .nav .layui-nav {
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    color: #000;
+    background: transparent;
+  }
+  
+  .nav .layui-nav .layui-this a, .nav .layui-nav .layui-nav-item a:hover {
+    color: rgb(255,255,255);
   }
 }
 

@@ -8,6 +8,8 @@
 
 欧美英文：https://en.spark-app.store/
 
+测试地址：http://beta.spark-app.store/
+
 测试地址：https://test.spark-app.store/
 
 网站概念PPT：http://pan.chaodn.tk/#s/6JEPPaxw
@@ -47,7 +49,7 @@ UI概念设计师：akliusizhe
 职责：搜集软件，打包软件，维护者可以不是开发者，但必须有认真负责的态度，对于自己维护的软件包应当维护到底。若不能维护，请在软件标题写明已停止维护并通知站长或其他开发者以便于找人接手。
 
 投递须知：http://www.shenmo.tech:420/?p=193
->联系方式
+> 联系方式
 
 QQ群：872690351
 

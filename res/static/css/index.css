@@ -268,6 +268,7 @@ body {
 /*底部*/
 footer {
   padding-bottom: 70px;
+  padding-top: 10px;
   background: #5e6664;
   margin-top: 10px;
   text-align: center;
@@ -285,7 +286,6 @@ footer a:hover {
 
 footer p {
   line-height: 35px;
-  display: inline-block;
 }
 
 /** 产品 */
@@ -1014,3 +1014,4 @@ footer p {
     padding: 40px;
   }
 }
+

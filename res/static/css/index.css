@@ -118,11 +118,11 @@ body {
 	height: 60%;
 }
 
-.nav .nav-logo a p:first-of-type {
+.nav .nav-logo a img:first-of-type {
 	visibility: hidden;
 }
 
-.nav .nav-logo a p:last-of-type {
+.nav .nav-logo a img:last-of-type {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);

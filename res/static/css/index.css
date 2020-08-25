@@ -148,19 +148,20 @@ body {
 
 .nav .nav-list button span {
   display: block;
-  width: 25px;
-  height: 2px;
-  background: #2db5a3;
+  width: 30px;
+  height: 4px;
+  background: rgb(47,85,151);
   margin-bottom: 6px;
   transition: 0.5s;
+  border-radius: 2px;
 }
 
 .nav .nav-list button span.spa1 {
-  transform: rotate(45deg);
+  transform: rotate(45deg) translate(4px,4px);
 }
 
 .nav .nav-list button span.spa3 {
-  transform: rotate(-45deg) translate(5px,-5px);
+  transform: rotate(-45deg) translate(3px,-3px);
 }
 
 .nav .layui-nav {
@@ -188,8 +189,10 @@ body {
 
 .nav .layui-nav-bar,
 .nav .layui-nav .layui-this:after {
-  height: 2px;
-  background-color: #2db5a3;
+  height: 4px;
+  background-color: rgb(47,85,151);
+  margin-top: -20px;
+  border-radius: 2px;
 }
 
 .nav .layui-nav .layui-this a

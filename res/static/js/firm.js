@@ -21,10 +21,10 @@ layui.define(['jquery', 'element', 'carousel', 'laypage'], function(exports){
   });
 
   //滚动监听
-  $(window).scroll(function() {
-    var scr=$(document).scrollTop();
-    scr > 0 ? $(".nav").addClass('scroll') : $(".nav").removeClass('scroll');
-  });
+  //$(window).scroll(function() {
+  //  var scr=$(document).scrollTop();
+  //  scr > 0 ? $(".nav").addClass('scroll') : $(".nav").removeClass('scroll');
+  //});
 
   //轮播文字
   $(function(){

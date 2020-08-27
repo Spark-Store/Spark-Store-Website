@@ -937,6 +937,10 @@ footer p {
   .nav .layui-nav .layui-this a, .nav .layui-nav .layui-nav-item a:hover {
     color: rgb(255,255,255);
   }
+
+  .nav .layui-nav div:last-of-type {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -985,6 +989,10 @@ footer p {
   
   .nav .layui-nav .layui-this a, .nav .layui-nav .layui-nav-item a:hover {
     color: rgb(255,255,255);
+  }
+
+  .nav .layui-nav div:last-of-type {
+    display: none;
   }
 }
 

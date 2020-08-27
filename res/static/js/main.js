@@ -119,69 +119,74 @@ function setCookie(cname,cvalue,exdays)
   document.cookie = cname + "=" + cvalue + "; " + expires;
 }
 //获取当前语言状态并请求语言包
+function 请求语言包(code) {
+  //请求通用语言包
+  网络请求({
+    方法:"GET",//string，GET或POST
+    地址:"./language/"+code+"/general.json",//string，链接地址（绝对或相对）
+    异步:true,//Boolean，是否启用异步
+    数据:"",//string，向服务器发送的数据（仅用于post请求）
+    发送前:function(xhr,参数) {
+      //function，在配置完成后，发送请求前调用
+    },
+    完成后:function(是否成功,状态码,内容,xhr) {
+      //function，在请求完成后调用
+      if (是否成功) {
+        var languageGeneral=JSON.parse(内容);
+        for (key in languageGeneral)  // x 为属性名
+        {
+          if (languageGeneral.hasOwnProperty(key)) {
+            vm.$set(vm.language,key,languageGeneral[key]);
+          }
+        }
+      } else {
+        console.error("语言配置请求失败，请刷新页面重试")
+      }
+    },
+    超时:function() {
+      //function，在请求超时时调用
+    }
+  });
+  //请求页面语言包
+  if (window.location.href.match("html")) {
+    var pageName=window.location.href.match(/(?<=\/)[^\/]+(?=\.html)/gi)[0];
+  } else {
+    var pageName="index";
+  }
+  网络请求({
+    方法:"GET",//string，GET或POST
+    地址:"./language/"+code+"/"+pageName+".json",//string，链接地址（绝对或相对）
+    异步:true,//Boolean，是否启用异步
+    数据:"",//string，向服务器发送的数据（仅用于post请求）
+    发送前:function(xhr,参数) {
+      //function，在配置完成后，发送请求前调用
+    },
+    完成后:function(是否成功,状态码,内容,xhr) {
+      //function，在请求完成后调用
+      if (是否成功) {
+        var languagePage=JSON.parse(内容);
+        for (key in languagePage)  // x 为属性名
+        {
+          if (languagePage.hasOwnProperty(key)) {
+            vm.$set(vm.language,key,languagePage[key]);
+          }
+        }
+        document.title=vm.language.title;
+      } else {
+        console.error("语言配置请求失败，请刷新页面重试")
+      }
+    },
+    超时:function() {
+      //function，在请求超时时调用
+    }
+  });  
+}
+
 function 多语言() {
   if (getCookie().hasOwnProperty("language")) {
     vm.language.code=getCookie().language;
-    //请求通用语言包
-    网络请求({
-      方法:"GET",//string，GET或POST
-      地址:"./language/"+vm.language.code+"/general.json",//string，链接地址（绝对或相对）
-      异步:true,//Boolean，是否启用异步
-      数据:"",//string，向服务器发送的数据（仅用于post请求）
-      发送前:function(xhr,参数) {
-        //function，在配置完成后，发送请求前调用
-      },
-      完成后:function(是否成功,状态码,内容,xhr) {
-        //function，在请求完成后调用
-        if (是否成功) {
-          var languageGeneral=JSON.parse(内容);
-          for (key in languageGeneral)  // x 为属性名
-          {
-            if (languageGeneral.hasOwnProperty(key)) {
-              vm.$set(vm.language,key,languageGeneral[key]);
-            }
-          }
-        } else {
-          console.error("语言配置请求失败，请刷新页面重试")
-        }
-      },
-      超时:function() {
-        //function，在请求超时时调用
-      }
-    });
-    //请求页面语言包
-    if (window.location.href.match("html")) {
-      var pageName=window.location.href.match(/(?<=\/)[^\/]+(?=\.html)/gi)[0];
-    } else {
-      var pageName="index";
-    }
-    网络请求({
-      方法:"GET",//string，GET或POST
-      地址:"./language/"+vm.language.code+"/"+pageName+".json",//string，链接地址（绝对或相对）
-      异步:true,//Boolean，是否启用异步
-      数据:"",//string，向服务器发送的数据（仅用于post请求）
-      发送前:function(xhr,参数) {
-        //function，在配置完成后，发送请求前调用
-      },
-      完成后:function(是否成功,状态码,内容,xhr) {
-        //function，在请求完成后调用
-        if (是否成功) {
-          var languagePage=JSON.parse(内容);
-          for (key in languagePage)  // x 为属性名
-          {
-            if (languagePage.hasOwnProperty(key)) {
-              vm.$set(vm.language,key,languagePage[key]);
-            }
-          }
-          document.title=vm.language.title;
-        } else {
-          console.error("语言配置请求失败，请刷新页面重试")
-        }
-      },
-      超时:function() {
-        //function，在请求超时时调用
-      }
-    });
+    请求语言包("zh-CN");
+    请求语言包(vm.language.code);
   } else {
     if (vm.language.codes.hasOwnProperty(navigator.language)) {
       setCookie("language",navigator.language,365);

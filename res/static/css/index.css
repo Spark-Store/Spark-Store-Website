@@ -73,6 +73,11 @@ body {
 
 /** 首页 */
 
+/*AJAX加载栏*/
+.q-loading-bar {
+  background: var(--q-color-primary)!important;
+}
+
 /*导航部分*/
 .nav {
   width: 100%;

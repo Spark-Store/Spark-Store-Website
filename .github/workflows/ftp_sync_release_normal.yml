@@ -25,4 +25,4 @@ jobs:
         # The local folder to copy, defaults to root project folder
         # local-dir: # optional, default is ./
         # Passes through options into git-ftp
-        # git-ftp-args: --insecure
+        git-ftp-args: --insecure

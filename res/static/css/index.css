@@ -17,7 +17,7 @@ body {
 /** 字体 */
 
 @font-face {
-  font-family: 'aliphh'; /* 阿里巴巴普惠体-heavy*/
+  font-family: 'aliphh'; /* 阿里巴巴普惠体-heavy */
   font-display: swap;
   src: url('//at.alicdn.com/t/webfont_37fasdzrdpv.eot'); /* IE9*/
   src: url('//at.alicdn.com/t/webfont_37fasdzrdpv.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -28,7 +28,7 @@ body {
 }
 
 @font-face {
-  font-family: 'aliphb'; /* 阿里巴巴普惠体-bold*/
+  font-family: 'aliphb'; /* 阿里巴巴普惠体-bold */
   font-display: swap;
   src: url('//at.alicdn.com/t/webfont_s8rh4cxnkuc.eot'); /* IE9*/
   src: url('//at.alicdn.com/t/webfont_s8rh4cxnkuc.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -39,7 +39,7 @@ body {
 }
 
 @font-face {
-  font-family: 'aliphm'; /* 阿里巴巴普惠体-medium*/
+  font-family: 'aliphm'; /* 阿里巴巴普惠体-medium */
   font-display: swap;
   src: url('//at.alicdn.com/t/webfont_52u7udd0h2l.eot'); /* IE9*/
   src: url('//at.alicdn.com/t/webfont_52u7udd0h2l.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -50,7 +50,7 @@ body {
 }
 
 @font-face {
-  font-family: 'aliphr'; /* 阿里巴巴普惠体-regular*/
+  font-family: 'aliphr'; /* 阿里巴巴普惠体-regular */
   font-display: swap;
   src: url('//at.alicdn.com/t/webfont_x8luquj5l5r.eot'); /* IE9*/
   src: url('//at.alicdn.com/t/webfont_x8luquj5l5r.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -61,7 +61,7 @@ body {
 }
 
 @font-face {
-  font-family: 'aliphl'; /* 阿里巴巴普惠体-regular*/
+  font-family: 'aliphl'; /* 阿里巴巴普惠体-regular */
   font-display: swap;
   src: url('//at.alicdn.com/t/webfont_9nftjukg7gn.eot'); /* IE9*/
   src: url('//at.alicdn.com/t/webfont_9nftjukg7gn.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -69,6 +69,26 @@ body {
   url('//at.alicdn.com/t/webfont_9nftjukg7gn.woff') format('woff'), /* chrome、firefox */
   url('//at.alicdn.com/t/webfont_9nftjukg7gn.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
   url('//at.alicdn.com/t/webfont_9nftjukg7gn.svg#AlibabaPuHuiTiL') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: 'aleBlai'; /* Alegreya Black-Italic */
+  src: url('../fonts/Alegreya-BlackItalic.ttf') format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+@font-face {
+  font-family: 'isliYY'; /* Islide 云犹体 */
+  src: url('../fonts/iSlide-YunYouTi.ttf') format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+@font-face {
+  font-family: 'pmzdcst'; /* 庞门正道粗书体 */
+  src: url('../fonts/庞门正道粗书体.ttf') format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+@font-face {
+  font-family: 'zkgdh'; /* 站酷高端黑 */
+  src: url('../fonts/站酷高端黑.ttf') format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
 }
 
 /** 首页 */
@@ -222,6 +242,115 @@ body {
 .nav .layui-nav .layui-this a
 ,.nav .layui-nav .layui-nav-item a:hover {
   color: rgb(47,85,151);
+}
+
+/*主页面*/
+.Picpage {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url("../img/index/1.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  perspective: calc(1500px);
+  overflow: hidden;
+}
+
+.Picpage .version {
+  width: calc(-30px + 120vmin);
+  position: absolute;
+  top: calc(16vh - 40vmin);
+  left: calc(50% - 50px - 15vmin);
+  transform: translate(-50%);
+}
+
+.Picpage .name {
+  font-family: aleBlai;
+  font-size: calc(20px + 7vmin);
+  color: #fff;
+  position: absolute;
+  top: calc(50% - 8vh - 14vmin);
+  left: calc(54% + 20vmin);
+  transform: translate(-100px,-50%);
+  width: 20px;
+  text-shadow: 0 0 0.2em rgba(0,0,0,0.6);
+}
+
+.Picpage .intro {
+  font-size: calc(10px + 2vmin);
+  white-space: nowrap;
+  font-family: "isliYY";
+  transform: translate(-4%,-50%);
+  top: calc(50% + 10px - 2vmin);
+  left: calc(54% - 18vh + 20vmin);
+  position: absolute;
+  color: #fff;
+}
+
+.Picpage .demoView {
+  --width: calc(90vh + 8vmin);
+  width: var(--width);
+  height: calc((0.5454 * var( --width)) + var(--bottom));
+  position: absolute;
+  --bottom: -20px;
+  left: calc(50% + 60vh - 60vmin);
+  transform: translate(-50%,0) rotateX(35.2deg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-image: url(../img/index/3.png);
+  bottom: 0;
+  z-index: -1;
+}
+
+.Picpage .slogan {
+  font-size: calc(16px + 1vmin);
+  position: absolute;
+  font-family: "pmzdcst";
+  left: calc(50% - 60vh + 60vmin);
+  color: rgba(0,0,0,0.68);
+  transform: translate(-50%,-50%)/* rotateX(35.2deg)*/;
+  bottom: 22vh;
+}
+
+.Picpage .goDown {
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  transform: translate(-50%,-50%) rotateX(35.2deg);
+  display: block;
+  font-size: calc(20px + 1vmin);
+  font-family: "zkgdh";
+  color: #fff;
+  background: linear-gradient(122deg, #48BDFF, #44B9FF, #3DB2FF, #35AAFD, #2FA3F6);
+  width: calc(60px + 6 * (20px + 1vmin));
+  text-align: center;
+  line-height: calc(0.2219 * (60px + 6 * (20px + 1vmin)));
+  border-radius: 200px;
+  box-shadow: 0px 4px 3px rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+.Picpage .decoration {
+  height: 30%;
+  width: calc(120vh + 8vmin);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Picpage .decoration img:first-of-type {
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.Picpage .decoration img:last-of-type {
+  height: 100%;
+  position: absolute;
+  right: 0;
 }
 
 /*轮播*/
@@ -941,6 +1070,24 @@ footer p {
   .nav .layui-nav div:last-of-type {
     display: none;
   }
+
+  .Picpage .intro {
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .Picpage .demoView {
+    transform: translate(-50%,0);
+    --bottom: -50px;
+  }
+
+  .Picpage .goDown {
+    transform: translate(-50%,-50%);
+  }
+
+  .Picpage .decoration {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -992,6 +1139,23 @@ footer p {
   }
 
   .nav .layui-nav div:last-of-type {
+    display: none;
+  }
+
+  .Picpage .intro {
+    left: calc(50% - 26vh + 26vmin);
+  }
+
+  .Picpage .demoView {
+    transform: translate(-50%,0);
+    --bottom: -50px;
+  }
+
+  .Picpage .goDown {
+    transform: translate(-50%,-50%);
+  }
+
+  .Picpage .decoration {
     display: none;
   }
 }

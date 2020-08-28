@@ -13,12 +13,12 @@ layui.define(['jquery', 'element', 'carousel', 'laypage'], function(exports){
   ,laypage = layui.laypage;
 
   //轮播渲染
-  carousel.render({
-    elem: '#banner'
-    ,width: '100%'
-    ,height: 'auto'
-    ,arrow: 'always'
-  });
+  //carousel.render({
+  //  elem: '#banner'
+  //  ,width: '100%'
+  //  ,height: 'auto'
+  //  ,arrow: 'always'
+  //});
 
   //滚动监听
   //$(window).scroll(function() {
@@ -27,9 +27,9 @@ layui.define(['jquery', 'element', 'carousel', 'laypage'], function(exports){
   //});
 
   //轮播文字
-  $(function(){
-    $('.banner').children('.title').addClass('active');
-  })
+  //$(function(){
+  //  $('.banner').children('.title').addClass('active');
+  //})
 
   //导航切换
   var btn = $('.nav').find('.nav-list').children('button')

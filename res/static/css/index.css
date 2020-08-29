@@ -249,10 +249,10 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-image: url("../img/index/1.gif");
+  /*background-image: url("../img/index/1.gif");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover;*/
   perspective: calc(1500px);
   overflow: hidden;
 }

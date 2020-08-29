@@ -257,6 +257,15 @@ body {
   overflow: hidden;
 }
 
+.Picpage video.background {
+  min-height: 100vh;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 100vw;
+  z-index: -1;
+}
+
 .Picpage .version {
   width: calc(-30px + 120vmin);
   position: absolute;

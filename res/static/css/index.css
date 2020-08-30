@@ -246,7 +246,6 @@ body {
 
 /*主页面*/
 .Picpage {
-  width: 100vw;
   height: 100vh;
   position: relative;
   /*background-image: url("../img/index/1.gif");

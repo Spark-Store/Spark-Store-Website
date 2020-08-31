@@ -13,7 +13,7 @@ var vm = new Vue({
       codes:{
         "zh-CN":"中文（中国）",
         "en-US":"English(US)"
-        "eo":"Esperanto(EO)
+        "eo":"Esperanto(EO)"
       }
     }
   },

@@ -343,7 +343,8 @@ body {
 .Picpage .goDown:hover{
   box-shadow: 0px 6px 5px rgba(0,0,0,0.5);
   color: rgb(0, 0, 0);
-  transform: translate(-50%,-50%) ;
+  transform: translate(-50%,-50%);
+  transition: linear 300ms;
 }
 
 .Picpage .decoration {
@@ -435,7 +436,7 @@ body {
 
 .main-product .content a {
   font-size: 18px;
-  color: #a1d8cb;
+  /* color: #a1d8cb; */
   line-height: 68px;
 }
 
@@ -533,7 +534,6 @@ footer {
 
 footer a,p {
   color: #a5aaa9;
-  font-size: 16px;
 }
 
 footer a:hover {
@@ -543,6 +543,16 @@ footer a:hover {
 
 footer p {
   line-height: 35px;
+  margin: 2px;
+}
+
+footer .contact-bottom {
+  font-size: 16px;
+}
+
+footer .friend-link {
+  line-height: 25px;
+  font-size: 14px;
 }
 
 /** 产品 */
@@ -603,7 +613,7 @@ footer p {
 }
 
 .banner .title {
-  padding-top: 170px;
+  padding-top: 100px;
 }
 
 .banner .title.active {
@@ -966,11 +976,18 @@ footer p {
 
 /* 下载 */
 .uk_bannerdown {
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
   background: -webkit-linear-gradient(-60deg, #7be0fa 0%, #3798ef 100%);
   background-color: #00d5ff;
   padding: 10px;
   border-radius: 20px;
-  box-shadow: 1px 1px 6px #666666;
+  color: rgb(255, 255, 255);
+}
+
+.uk_bannerdown:hover {
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0);
+  transition: linear 300ms;
 }
 
 @media screen and (max-width: 480px) {

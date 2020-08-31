@@ -340,6 +340,12 @@ body {
   z-index: 1;
 }
 
+.Picpage .goDown:hover{
+  box-shadow: 0px 6px 5px rgba(0,0,0,0.5);
+  color: rgb(0, 0, 0);
+  transform: translate(-50%,-50%) ;
+}
+
 .Picpage .decoration {
   height: 30%;
   width: calc(120vh + 8vmin);

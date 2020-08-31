@@ -9,24 +9,28 @@
 var googleGtag1 = document.createElement("script");
 googleGtag1.type = "text/javascript";
 googleGtag1.async = true;
-googleGtag1.src = "https://www.googletagmanager.com/gtag/js?id=UA-104916554-7";
+googleGtag1.src = "https://www.googletagmanager.com/gtag/js?id=UA-176780645-1";
+document.getElementsByTagName('head')[0].appendChild(googleGtag1);
 
 var googleGtag2 = document.createElement("script");
 googleGtag2.innerHTML = '\
   window.dataLayer = window.dataLayer || [];\
   function gtag(){dataLayer.push(arguments);}\
   gtag("js", new Date());\
-  gtag("config", "UA-104916554-7");';
-
-document.getElementsByTagName('head')[0].appendChild(googleGtag1);
+  gtag("config", "UA-176780645-1");';
 document.getElementsByTagName('head')[0].appendChild(googleGtag2);
 
 // Baidu Tongji
 var _hmt = _hmt || [];
-(function() {
+(function () {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?b5ed39aa9fda6e5a257d1621636623fa";
-  var s = document.getElementsByTagName("script")[0]; 
+  var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(hm, s);
 })();
 
+// 360 Push
+(function () {
+  var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+  document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();

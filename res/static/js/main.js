@@ -12,8 +12,7 @@ var vm = new Vue({
       code:"zh-CN",
       codes:{
         "zh-CN":"中文（中国）",
-        "en-US":"English(US)",
-        "eo":"Esperanto(EO)"
+        "en-US":"English(US)"
       }
     }
   },

@@ -28,9 +28,3 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(hm, s);
 })();
-
-// 360 Push
-(function () {
-  var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
-  document.write('<script src="' + src + '" id="sozz"><\/script>');
-})();

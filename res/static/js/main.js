@@ -134,10 +134,14 @@ function 网络请求(参数) {
   }
 }
 
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 //获取当前语言状态并请求语言包
 function 请求语言包(code) {
   //请求通用语言包
-  网络请求({
+  const 网络请求请求通用语言包请求参数 = {
     方法: "GET",//string，GET或POST
     地址: "./language/" + code + "/general.json",//string，链接地址（绝对或相对）
     异步: true,//Boolean，是否启用异步
@@ -145,7 +149,7 @@ function 请求语言包(code) {
     发送前: function (xhr, 参数) {
       //function，在配置完成后，发送请求前调用
     },
-    完成后: function (是否成功, 状态码, 内容, xhr) {
+    完成后: async function (是否成功, 状态码, 内容, xhr) {
       //function，在请求完成后调用
       if (是否成功) {
         var languageGeneral = JSON.parse(内容);
@@ -156,20 +160,23 @@ function 请求语言包(code) {
           }
         }
       } else {
-        console.error("语言配置请求失败，请刷新页面重试")
+        console.warn("通用语言包语言配置请求失败，将于 5 秒后重试");
+        await delay(5000);
+        网络请求(网络请求请求通用语言包请求参数);
       }
     },
     超时: function () {
       //function，在请求超时时调用
     }
-  });
+  };
+  网络请求(网络请求请求通用语言包请求参数);
   //请求页面语言包
   if (window.location.href.match("html")) {
     var pageName = window.location.href.match(/(?<=\/)[^\/]+(?=\.html)/gi)[0];
   } else {
     var pageName = "index";
   }
-  网络请求({
+  const 网络请求请求单页语言包请求参数 = {
     方法: "GET",//string，GET或POST
     地址: "./language/" + code + "/" + pageName + ".json",//string，链接地址（绝对或相对）
     异步: true,//Boolean，是否启用异步
@@ -177,7 +184,7 @@ function 请求语言包(code) {
     发送前: function (xhr, 参数) {
       //function，在配置完成后，发送请求前调用
     },
-    完成后: function (是否成功, 状态码, 内容, xhr) {
+    完成后: async function (是否成功, 状态码, 内容, xhr) {
       //function，在请求完成后调用
       if (是否成功) {
         var languagePage = JSON.parse(内容);
@@ -189,20 +196,25 @@ function 请求语言包(code) {
         }
         document.title = vm.language.title;
       } else {
-        console.error("语言配置请求失败，请刷新页面重试")
+        console.warn("单页语言包语言配置请求失败，将于 5 秒后重试");
+        await delay(5000);
+        网络请求(网络请求请求单页语言包请求参数);
       }
     },
     超时: function () {
       //function，在请求超时时调用
     }
-  });
+  };
+  网络请求(网络请求请求单页语言包请求参数);
 }
 
 function 多语言() {
   if (getCookie().hasOwnProperty("language")) {
     vm.language.code = getCookie().language;
-    请求语言包("zh-CN");
     请求语言包(vm.language.code);
+    if(vm.language.code != "zh-CN"){
+      请求语言包("zh-CN");
+    }
   } else {
     if (vm.language.codes.hasOwnProperty(navigator.language)) {
       setCookie("language", navigator.language, 365);

@@ -141,7 +141,7 @@ function delay(ms) {
 //获取当前语言状态并请求语言包
 function 请求语言包(code) {
   //请求通用语言包
-  const 网络请求请求通用语言包请求参数 = {
+  let 网络请求请求通用语言包请求参数 = {
     方法: "GET",//string，GET或POST
     地址: "./language/" + code + "/general.json",//string，链接地址（绝对或相对）
     异步: true,//Boolean，是否启用异步
@@ -160,9 +160,16 @@ function 请求语言包(code) {
           }
         }
       } else {
-        console.warn("通用语言包语言配置请求失败，将于 5 秒后重试");
-        await delay(5000);
-        网络请求(网络请求请求通用语言包请求参数);
+        if (状态码 === 404){
+          console.warn("未找到该语言包，将于 5 秒后自动切换至 zh-CN");
+          await delay(5000);
+          网络请求请求通用语言包请求参数.地址 = "./language/zh-CN/general.json";
+          网络请求(网络请求请求通用语言包请求参数);
+        } else {
+          console.warn("通用语言包语言配置请求失败，将于 5 秒后重试");
+          await delay(5000);
+          网络请求(网络请求请求通用语言包请求参数);
+        }
       }
     },
     超时: function () {
@@ -171,12 +178,13 @@ function 请求语言包(code) {
   };
   网络请求(网络请求请求通用语言包请求参数);
   //请求页面语言包
+  let pageName;
   if (window.location.href.match("html")) {
-    var pageName = window.location.href.match(/(?<=\/)[^\/]+(?=\.html)/gi)[0];
+    pageName = window.location.href.match(/(?<=\/)[^\/]+(?=\.html)/gi)[0];
   } else {
-    var pageName = "index";
+    pageName = "index";
   }
-  const 网络请求请求单页语言包请求参数 = {
+  let 网络请求请求单页语言包请求参数 = {
     方法: "GET",//string，GET或POST
     地址: "./language/" + code + "/" + pageName + ".json",//string，链接地址（绝对或相对）
     异步: true,//Boolean，是否启用异步
@@ -196,9 +204,16 @@ function 请求语言包(code) {
         }
         document.title = vm.language.title;
       } else {
-        console.warn("单页语言包语言配置请求失败，将于 5 秒后重试");
-        await delay(5000);
-        网络请求(网络请求请求单页语言包请求参数);
+        if (状态码 === 404){
+          console.warn("未找到该语言包，将于 5 秒后自动切换至 zh-CN");
+          await delay(5000);
+          网络请求请求单页语言包请求参数.地址 = "./language/zh-CN/" + pageName + ".json";
+          网络请求(网络请求请求单页语言包请求参数);
+        } else {
+          console.warn("单页语言包语言配置请求失败，将于 5 秒后重试");
+          await delay(5000);
+          网络请求(网络请求请求单页语言包请求参数);
+        }
       }
     },
     超时: function () {

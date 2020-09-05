@@ -212,9 +212,6 @@ function 多语言() {
   if (getCookie().hasOwnProperty("language")) {
     vm.language.code = getCookie().language;
     请求语言包(vm.language.code);
-    if(vm.language.code != "zh-CN"){
-      请求语言包("zh-CN");
-    }
   } else {
     if (vm.language.codes.hasOwnProperty(navigator.language)) {
       setCookie("language", navigator.language, 365);

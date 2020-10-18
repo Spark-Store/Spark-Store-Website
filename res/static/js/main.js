@@ -47,7 +47,7 @@ var vm = new Vue({
       code: "zh-CN",
       codes: {
         "zh-CN": "中文（中国）",
-        "en-US": "English(US)"
+        "en-US": "English(US)",
         "fr": "fr"
       }
     }

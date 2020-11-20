@@ -48,7 +48,7 @@ var vm = new Vue({
       codes: {
         "zh-CN": "中文（中国）",
         "en-US": "English(US)",
-        "fr": "fr"
+        "fr-FR": "Français(France)"
       }
     }
   },

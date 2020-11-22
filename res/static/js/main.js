@@ -181,7 +181,7 @@ function 请求语言包(code) {
   //请求页面语言包
   let pageName;
   if (window.location.href.match("html")) {
-    pageName = window.location.href.match(/(?<=\/)[^\/]+(?=\.html)/gi)[0];
+    pageName = window.location.href.match(/(?=[^\/]+)\w+(?=\.html)/gi)[0];
   } else {
     pageName = "index";
   }

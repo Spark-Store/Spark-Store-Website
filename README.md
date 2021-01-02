@@ -43,12 +43,7 @@ UI概念设计师：akliusizhe qygwhk
 投递须知：http://www.shenmo.tech:420/?p=193
 > 联系方式
 
-QQ群：872690351
-
-网站开发QQ群：1044531138
-
-电子邮箱：support@spark-app.store
-
+https://chat.spark-app.store/channel/Everything
 ## 温馨提示
 
 * `clone` 的时候如果速度太慢或者内容太多，一般情况下可以利用 `--depth=1`。

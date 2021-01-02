@@ -2,23 +2,13 @@
 
 星火应用商店官网各线路：
 
-中国大陆：https://www.spark-app.store/
+中国：https://www.spark-app.store/
 
-欧美中文：http://oc.spark-app.store/
-
-欧美英文：https://en.spark-app.store/
-
-测试地址：http://beta.spark-app.store/
-
-测试地址：https://test.spark-app.store/
+测试：https://test.spark-app.store/
 
 其他链接：
 
-网站概念PPT：http://pan.chaodn.tk/#s/6JEPPaxw
-
-问题反馈地址：https://support.qq.com/products/178646 
-
-产品博客地址：https://support.qq.com/products/178646/blog-archive
+3.0新网站设计图：https://chaodn-my.sharepoint.com/:u:/g/personal/chaodn_chaodn_tk/EVzjc7qmtwNMocYejwj_ZuUB7djHiN_xfqDsNpkydgh2_Q?e=c4rRRl
 
 欢迎UI大佬加入我们！
 
@@ -31,7 +21,7 @@
 
 网站制作管理：chaodn Playhi momen jiwangyihao 时间世界
 
-UI概念设计师：akliusizhe 
+UI概念设计师：akliusizhe qygwhk 
 
 ## 加入我们
 软件维护员

@@ -48,9 +48,9 @@ https://chat.spark-app.store/channel/Everything
 
 * `clone` 的时候如果速度太慢或者内容太多，一般情况下可以利用 `--depth=1`。
 
-# Starfire App Store Official Website
+# Spark Store Official Website
 
-Starfire App Store official website by line.
+Spark Store official website by line.
 
 China: https://www.spark-app.store/
 
@@ -63,8 +63,7 @@ Other links.
 Welcome UI bigwigs to join us!
 
 ## Team Introduction
-Shenmo, a big brother of Depth Technology Forum (bbs.deepin.org), started the Starfire Working Group to enrich the Linux ecosystem.
-We are a young team.
+Shenmo, a big brother of Deepin Technology Forum (bbs.deepin.org), started the Spark Working Group to enrich the Linux ecosystem.
 We are a young team, most of our members are post-00s, elementary school students, middle school students, college students, from all over the world.
 Despite our different ages and qualifications, we have the same goal of building a Linux ecosystem.
 We have the confidence and courage to do so!
@@ -95,5 +94,4 @@ Submission instructions: http://www.shenmo.tech:420/?p=193
 
 https://chat.spark-app.store/channel/Everything
 
-Translated with www.DeepL.com/Translator (free version)
 

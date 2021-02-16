@@ -95,3 +95,51 @@ Submission instructions: http://www.shenmo.tech:420/?p=193
 https://chat.spark-app.store/channel/Everything
 
 
+# Site officiel du Spark Store
+
+Site officiel du Spark Store par ligne.
+
+Chine : https://www.spark-app.store/
+
+Test : https://test.spark-app.store/
+
+Autres liens.
+
+3.0 nouveau design du site web : https://chaodn-my.sharepoint.com/:u:/g/personal/chaodn_chaodn_tk/EVzjc7qmtwNMocYejwj_ZuUB7djHiN_xfqDsNpkydgh2_Q?e=c4rRRl
+
+Bienvenue aux gros bonnets de l'assurance-chômage !
+
+## Présentation de l'équipe
+Shenmo, un grand frère du Deepin Technology Forum (bbs.deepin.org), a créé le groupe de travail Spark pour enrichir l'écosystème Linux.
+Nous sommes une équipe jeune, la plupart de nos membres sont des post-modernes, des élèves d'école primaire, des collégiens, des étudiants, venus du monde entier.
+Malgré nos différences d'âge et de qualifications, nous avons le même objectif de construire un écosystème Linux.
+Nous avons la confiance et le courage nécessaires pour y parvenir !
+
+Gestion de la production du site web : chaodn Playhi momen jiwangyihao Time World
+
+Concepteur de l'interface utilisateur : akliusizhe qygwhk 
+
+## Rejoignez-nous
+Responsable de la maintenance des logiciels
+
+> Description du poste
+
+Âge : non limité
+
+Genre : non limité
+
+Lieu de travail : Terre
+
+Exigences en matière de formation : non limité
+
+Aptitudes requises : savoir utiliser linux, savoir taper, savoir surfer sur internet, savoir télécharger des logiciels, être responsable et avoir un ordinateur.
+
+Tâches : collecter des logiciels, des paquets de logiciels, le responsable de la maintenance ne peut pas être un développeur, mais doit avoir une attitude sérieuse et responsable, car leur maintenance du paquet de logiciels doit être assurée jusqu'au bout. Si vous ne pouvez pas maintenir le logiciel, veuillez écrire dans le titre du logiciel que vous avez cessé de le maintenir et en informer le webmaster ou les autres développeurs afin qu'ils puissent trouver quelqu'un pour prendre la relève.
+
+Instructions pour la soumission : http://www.shenmo.tech:420/?p=193
+> Contact
+
+https://chat.spark-app.store/channel/Everything
+
+Traduit avec www.DeepL.com/Translator (version gratuite)
+

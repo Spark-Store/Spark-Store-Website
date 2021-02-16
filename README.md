@@ -141,5 +141,4 @@ Instructions pour la soumission : http://www.shenmo.tech:420/?p=193
 
 https://chat.spark-app.store/channel/Everything
 
-Traduit avec www.DeepL.com/Translator (version gratuite)
 

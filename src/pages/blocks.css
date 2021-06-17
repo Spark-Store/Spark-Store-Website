@@ -1,0 +1,33 @@
+.left {
+    float: left;
+    width: 44%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.right {
+    float: left;
+    width: 40%;
+    min-height: 280px;
+    margin-right: 6%;
+    margin-left: 4%;
+    margin-top: 3%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:640px) {
+    .right {
+        display: none;
+        min-height: 0px;
+    }
+    .left {
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+}

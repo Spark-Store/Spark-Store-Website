@@ -1,0 +1,43 @@
+.container {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo {
+    background-image: url("./logo.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 34px;
+    width: 34px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav {
+    display: inline-block;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+}
+
+button {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    color: #484848;
+    margin: 0 16px;
+    cursor: pointer;
+    padding: 0 0 5px 0;
+    -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,12 @@
+.block {
+    float: left;
+    width: 25.33%;
+    margin: 4%;
+}
+
+@media screen and (max-width:640px) {
+    .block {
+        width: 88%;
+        margin: 6%;
+    }
+}

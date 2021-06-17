@@ -1,144 +1,70 @@
-# 星火应用商店官网
+# Getting Started with Create React App
 
-星火应用商店官网各线路：
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-中国：https://www.spark-app.store/
+## Available Scripts
 
-测试：https://test.spark-app.store/
+In the project directory, you can run:
 
-其他链接：
+### `yarn start`
 
-3.0新网站设计图：https://chaodn-my.sharepoint.com/:u:/g/personal/chaodn_chaodn_tk/EVzjc7qmtwNMocYejwj_ZuUB7djHiN_xfqDsNpkydgh2_Q?e=c4rRRl
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-欢迎UI大佬加入我们！
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## 团队介绍
-由深度科技论坛（bbs.deepin.org）大佬 shenmo 发起的星火工作组致力于丰富 Linux 生态，
-取“星星之火，可以燎原”之意，组建了星火应用商店。
-我们是个年轻的团队，大部分成员是 00 后，有小学生，中学生，大学生，来自五湖四海。
-尽管我们年龄不同，资历不同，但是我们努力建设 Linux 生态的目标是相同的，
-我们有信心、也有勇气做到这些！
+### `yarn test`
 
-网站制作管理：chaodn Playhi momen jiwangyihao 时间世界
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-UI概念设计师：akliusizhe qygwhk 
+### `yarn build`
 
-## 加入我们
-软件维护员
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-> 职位描述
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-年龄：不限
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-性别：不限
+### `yarn eject`
 
-工作地点：地球
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-学历要求：不限
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-能力要求：会使用linux，会打字，会上网，会下载软件安装包，有责任心，有电脑。
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-职责：搜集软件，打包软件，维护者可以不是开发者，但必须有认真负责的态度，对于自己维护的软件包应当维护到底。若不能维护，请在软件标题写明已停止维护并通知站长或其他开发者以便于找人接手。
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-投递须知：http://www.shenmo.tech:420/?p=193
-> 联系方式
+## Learn More
 
-https://chat.spark-app.store/channel/Everything
-## 温馨提示
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-* `clone` 的时候如果速度太慢或者内容太多，一般情况下可以利用 `--depth=1`。
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-# Spark Store Official Website
+### Code Splitting
 
-Spark Store official website by line.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-China: https://www.spark-app.store/
+### Analyzing the Bundle Size
 
-Test: https://test.spark-app.store/
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Other links.
+### Making a Progressive Web App
 
-3.0 new website design: https://chaodn-my.sharepoint.com/:u:/g/personal/chaodn_chaodn_tk/EVzjc7qmtwNMocYejwj_ZuUB7djHiN_xfqDsNpkydgh2_Q?e=c4rRRl
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-Welcome UI bigwigs to join us!
+### Advanced Configuration
 
-## Team Introduction
-Shenmo, a big brother of Deepin Technology Forum (bbs.deepin.org), started the Spark Working Group to enrich the Linux ecosystem.
-We are a young team, most of our members are post-00s, elementary school students, middle school students, college students, from all over the world.
-Despite our different ages and qualifications, we have the same goal of building a Linux ecosystem.
-We have the confidence and courage to do so!
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Website production management: chaodn Playhi momen jiwangyihao Time World
+### Deployment
 
-UI concept designer: akliusizhe qygwhk 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-## Join us
-Software Maintainer
+### `yarn build` fails to minify
 
-> Job Description
-
-Age: not limited
-
-Gender: not limited
-
-Work location: Earth
-
-Education requirements: not limited
-
-Ability requirements: can use linux, can type, can surf the internet, can download software installation packages, responsible and have a computer.
-
-Duties: collect software, package software, maintainer can not be a developer, but must have a serious and responsible attitude, for their maintenance of the software package should be maintained to the end. If you cannot maintain the software, please write in the title of the software that you have stopped maintaining it and notify the webmaster or other developers so that they can find someone to take over.
-
-Submission instructions: http://www.shenmo.tech:420/?p=193
-> Contact
-
-https://chat.spark-app.store/channel/Everything
-
-
-# Site officiel du Spark Store
-
-Site officiel du Spark Store par ligne.
-
-Chine : https://www.spark-app.store/
-
-Test : https://test.spark-app.store/
-
-Autres liens.
-
-3.0 nouveau design du site web : https://chaodn-my.sharepoint.com/:u:/g/personal/chaodn_chaodn_tk/EVzjc7qmtwNMocYejwj_ZuUB7djHiN_xfqDsNpkydgh2_Q?e=c4rRRl
-
-Bienvenue aux gros bonnets de l'assurance-chômage !
-
-## Présentation de l'équipe
-Shenmo, un grand frère du Deepin Technology Forum (bbs.deepin.org), a créé le groupe de travail Spark pour enrichir l'écosystème Linux.
-Nous sommes une équipe jeune, la plupart de nos membres sont des post-modernes, des élèves d'école primaire, des collégiens, des étudiants, venus du monde entier.
-Malgré nos différences d'âge et de qualifications, nous avons le même objectif de construire un écosystème Linux.
-Nous avons la confiance et le courage nécessaires pour y parvenir !
-
-Gestion de la production du site web : chaodn Playhi momen jiwangyihao Time World
-
-Concepteur de l'interface utilisateur : akliusizhe qygwhk 
-
-## Rejoignez-nous
-Responsable de la maintenance des logiciels
-
-> Description du poste
-
-Âge : non limité
-
-Genre : non limité
-
-Lieu de travail : Terre
-
-Exigences en matière de formation : non limité
-
-Aptitudes requises : savoir utiliser linux, savoir taper, savoir surfer sur internet, savoir télécharger des logiciels, être responsable et avoir un ordinateur.
-
-Tâches : collecter des logiciels, des paquets de logiciels, le responsable de la maintenance ne peut pas être un développeur, mais doit avoir une attitude sérieuse et responsable, car leur maintenance du paquet de logiciels doit être assurée jusqu'au bout. Si vous ne pouvez pas maintenir le logiciel, veuillez écrire dans le titre du logiciel que vous avez cessé de le maintenir et en informer le webmaster ou les autres développeurs afin qu'ils puissent trouver quelqu'un pour prendre la relève.
-
-Instructions pour la soumission : http://www.shenmo.tech:420/?p=193
-> Contact
-
-https://chat.spark-app.store/channel/Everything
-
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
